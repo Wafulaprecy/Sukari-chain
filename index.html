@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukarichain.AI Dashboard</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <h1>Sukarichain.AI</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Our Services</a></li>
+                <li><a href="#login">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <h2>Welcome to Sukarichain.AI</h2>
+        <p>Your partner in optimizing the sugarcane supply chain with AI-driven insights.</p>
+   
+
+    <!-- Dashboard Section -->
+<section id="dashboard" class="section">
+    <h2>Dashboard</h2>
+    <div class="dashboard-overview">
+        <div class="card">
+            <h3>Region: Western Kenya</h3>
+            <p><strong>Sugarcane Production:</strong> 500,000 tons</p>
+            <p><strong>Market Demand:</strong> High</p>
+            <p><strong>Supply Chain Status:</strong> Active</p>
+            <button class="collapse-btn">More Info</button>
+            <div class="collapsible-content">
+                <p>Insights: Export demand increasing by 10% annually.</p>
+            </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="productionChart"></canvas>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section id="statistics" class="section">
+    <h2>Industry Statistics</h2>
+    <div class="stats">
+        <div class="stat-card">
+            <h3>Global Sugarcane Production</h3>
+            <canvas id="globalProductionChart"></canvas>
+        </div>
+        <div class="stat-card">
+            <h3>Top Producing Country</h3>
+            <p>Brazil: 39% of global production</p>
+        </div>
+        <div class="stat-card">
+            <h3>Average Price of Sugar</h3>
+            <p>$0.35 per kg</p>
+        </div>
+    </div>
+</section>
+<!-- About Section -->
+<section id="about" class="section">
+    <h2>About Us</h2>
+    <div class="about-cards">
+        <div class="card">
+            <h3>Welcome to Sukarichain.AI</h3>
+            <p>
+                We are dedicated to empowering youth-led sugar enterprises through cutting-edge, AI-powered solutions
+                designed to optimize supply chains. Our mission is to revolutionize the sugar industry by fostering 
+                efficiency, sustainability, and growth at every step of production and distribution.
+            </p>
+        
+            <h3>Innovation Meets Agriculture</h3>
+            <p>
+                By equipping young farmers with advanced technological tools, we aim to enhance productivity, reduce waste,
+                and maximize profits while promoting a greener, more resilient agricultural future.
+            </p>
+       
+            <h3>Join the Movement</h3>
+            <p>
+                Together, let's reshape the sugar industry—powered by AI, driven by youth, and rooted in sustainable practices.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+        <div class="card">
+            <h3>Supply Chain Analytics</h3>
+            <p>Streamline operations with real-time insights into sugarcane supply and demand trends.</p>
+
+            <h3>Risk Prediction</h3>
+            <p>Identify and mitigate risks using AI models tailored to your enterprise's needs.</p>
+
+            <h3>Industry Insights</h3>
+            <p>Access valuable data on market trends, pricing, and future opportunities.</p>
+
+            <h3>Real-Time Monitoring</h3>
+            <p>Track resources and operations seamlessly to optimize your supply chain.</p>
+
+            <h3>Youth-Centric Training</h3>
+            <p>Empowering young entrepreneurs with AI tools and support for success.</p>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sukarichain.AI. All Rights Reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

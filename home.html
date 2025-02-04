@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Predictions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .container { display: flex; justify-content: space-around; margin-top: 20px; }
+        .box { width: 45%; padding: 20px; border: 1px solid #ccc; border-radius: 5px; }
+        .output { margin-top: 20px; }
+        button { margin-top: 10px; padding: 10px 20px; }
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Model Predictions</title>
+</head>
+<body>
+    <h1>Real-Time Model Predictions</h1>
+    <div class="container">
+        <!-- Demand Prediction -->
+        <div class="box">
+            <h2>Demand Prediction</h2>
+            <form action="/predict/demand" method="post">
+                <label>Year:</label><br>
+                <input type="number" name="Year" required><br>
+                <label>Month:</label><br>
+                <input type="number" name="Month" required><br>
+                <label>Production (metric tonnes):</label><br>
+                <input type="number" name="Production" step="0.01" required><br>
+                <label>Consumption (metric tonnes):</label><br>
+                <input type="number" name="Consumption" step="0.01" required><br>
+                <label>Imports (metric tonnes):</label><br>
+                <input type="number" name="Imports" step="0.01" required><br>
+                <label>Exports (metric tonnes):</label><br>
+                <input type="number" name="Exports" step="0.01" required><br>
+                <label>Per Capita GDP (KSh):</label><br>
+                <input type="number" name="GDP" step="0.01" required><br>
+                <label>Real Price of Sugar (KSh/kg):</label><br>
+                <input type="number" name="Price" step="0.01" required><br>
+                <label>Lag 1:</label><br>
+                <input type="number" id="demand-lag1" name="Lag_1"><br>
+                <label>Lag 2:</label><br>
+                <input type="number" id="demand-lag2" name="Lag_2"><br>
+                <label>Lag 3:</label><br>
+                <input type="number" id="demand-lag3" name="Lag_3"><br> 
+                <button type="submit">Predict Demand</button>
+            </form>
+            {% if demand_output %}
+            <div class="output">
+                <p><strong>Prediction:</strong> {{ demand_output }}</p>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Risk Prediction -->
+        <div class="box">
+            <h2>Risk Prediction</h2>
+            <form action="/predict/risk" method="post">
+                <label>Region:</label><br>
+                <input type="number" name="Region" required><br>
+                <label>Crop Yield (Tons/Hectare):</label><br>
+                <input type="number" name="Crop_Yield" step="0.01" required><br>
+                <label>Weather Conditions:</label><br>
+                <input type="number" name="Weather" step="0.01" required><br>
+                <label>Disease Prevalence (%):</label><br>
+                <input type="number" name="Disease_Prevalence" step="0.01" required><br>
+                <label>Labor Availability (%):</label><br>
+                <input type="number" name="Labor_Availability" step="0.01" required><br>
+                <label>Production Volume (Tons):</label><br>
+                <input type="number" name="Production_Volume" step="0.01" required><br>
+                <label>Transportation Distance (Km):</label><br>
+                <input type="number" name="Transportation_Distance" step="0.01" required><br>
+                <label>Fuel Costs (KES/Liter):</label><br>
+                <input type="number" name="Fuel_Costs" step="0.01" required><br>
+                <label>Storage Capacity (Tons):</label><br>
+                <input type="number" name="Storage_Capacity" step="0.01" required><br>
+                <label>Domestic Demand (Tons):</label><br>
+                <input type="number" name="Domestic_Demand" step="0.01" required><br>
+                <label>Export Volume (Tons):</label><br>
+                <input type="number" name="Export_Volume" step="0.01" required><br>
+                <label>Political Stability Index:</label><br>
+                <input type="number" name="Political_Stability" step="0.01" required><br>
+                <button type="submit">Predict Risk</button>
+            </form>
+            {% if risk_output %}
+            <div class="output">
+                <p><strong>Prediction:</strong> {{ risk_output }}</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>

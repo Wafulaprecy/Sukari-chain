@@ -1,0 +1,280 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f4f4f9 25%, #e9f5f2 100%);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    overflow-x: hidden;
+}
+
+header {
+    background: linear-gradient(to right, #00a86b, #28a745);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 80%;
+    max-width: 600px;
+    border: 2px solid #00a86b;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    perspective: 1000px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    color: #00a86b;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.card p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.farm-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.farm-details div {
+    width: 30%;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.farm-details div strong {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Action Button */
+.action-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #00a86b, #28a745);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background: linear-gradient(to right, #28a745, #00a86b);
+    transform: translateY(-5px);
+}
+/* General Styling */
+.section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Search Bar */
+.search-bar input {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Dashboard Cards */
+.card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.collapse-btn {
+    background: #36a2eb;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.collapse-btn:hover {
+    background: #1d86d1;
+}
+
+.collapsible-content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 20px;
+}
+
+/* Statistics Cards */
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33% - 20px);
+}
+
+.stat-card canvas {
+    margin: 10px auto;
+}
+
+/* Collapsible Content */
+.collapse-btn {
+    background-color: #00a86b;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.collapse-btn:hover {
+    background-color: #28a745;
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00a86b;
+    color: white;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 768px) {
+    .farm-details div {
+        width: 45%;
+    }
+
+    input[type="text"] {
+        width: 90%;
+    }
+}
+
+@media (max-width: 500px) {
+    .farm-details div {
+        width: 100%;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .container {
+        padding: 10px;
+    }
+}
